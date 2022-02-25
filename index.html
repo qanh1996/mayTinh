@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="ip" type="text"></br>
+
+<button value="1" onclick="hienthiso(1)" id="one">1</button>
+<button value="2" onclick="hienthiso(2)" id="two">2</button>
+<button value="3" onclick="hienthiso(3)" id="three">3</button>
+</br>
+<button value="4" onclick="hienthiso(4)" id="for">4</button>
+<button value="5" onclick="hienthiso(5)" id="five">5</button>
+<button value="6" onclick="hienthiso(6)" id="six">6</button>
+</br>
+<button value="6" onclick="hienthiso(7)" id="seven">7</button>
+<button value="6" onclick="hienthiso(8)" id="egh">8</button>
+<button value="6" onclick="hienthiso(9)" id="night">9</button>
+</br>
+<button value="+" onclick="hienthiso('+')" id="cong">+</button>
+<button value="-" onclick="hienthiso('-')" id="tru">-</button>
+<button value="*" onclick="hienthiso('*')" id="nhan">*</button>
+<button value="/" onclick="hienthiso('/')" id="chia">/</button>
+</br>
+<button value="=" onclick="tinh()" id="bang">=</button>
+<button value=' ' onclick="del()" id="ac">AC</button>
+<script>
+    function hienthiso(data) {
+        document.getElementById('ip').value += data
+
+    }
+
+    function tinh() {
+        document.getElementById('ip').value = eval(document.getElementById('ip').value)
+    }
+
+    function del() {
+        document.getElementById('ip').value = ''
+
+    }
+</script>
+</body>
+</html>
